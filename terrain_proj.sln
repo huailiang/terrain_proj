@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "terrain_proj.Plugins", "terrain_proj.Plugins.csproj", "{EBDE338C-5C92-169B-3CE5-734825994520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "terrain_proj", "terrain_proj.csproj", "{5D23D143-9A24-95F2-35ED-43A849E52360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "terrain_proj.Editor.Plugins", "terrain_proj.Editor.Plugins.csproj", "{8AED93B8-F359-5532-B4D2-794E5EC7B0CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "terrain_proj.Editor", "terrain_proj.Editor.csproj", "{106C2D85-E394-927B-D103-D214614043A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBDE338C-5C92-169B-3CE5-734825994520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDE338C-5C92-169B-3CE5-734825994520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDE338C-5C92-169B-3CE5-734825994520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDE338C-5C92-169B-3CE5-734825994520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D23D143-9A24-95F2-35ED-43A849E52360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D23D143-9A24-95F2-35ED-43A849E52360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D23D143-9A24-95F2-35ED-43A849E52360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D23D143-9A24-95F2-35ED-43A849E52360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AED93B8-F359-5532-B4D2-794E5EC7B0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AED93B8-F359-5532-B4D2-794E5EC7B0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AED93B8-F359-5532-B4D2-794E5EC7B0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AED93B8-F359-5532-B4D2-794E5EC7B0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106C2D85-E394-927B-D103-D214614043A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106C2D85-E394-927B-D103-D214614043A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106C2D85-E394-927B-D103-D214614043A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106C2D85-E394-927B-D103-D214614043A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
