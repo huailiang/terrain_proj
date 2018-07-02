@@ -32,7 +32,7 @@ public class TerrainLoadEditor : Editor
         {
             for (int yy = 0; yy < YMax; ++yy)
             {
-                //TerrainLoadMgr.sington.LoadItem(xx, yy);
+                TerrainLoadMgr.sington.LoadItem(xx, yy);
                 TerrainLoadMgr.sington.LoadCollider(xx, yy);
             }
         }

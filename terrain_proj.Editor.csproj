@@ -194,9 +194,6 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>D:/install/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-UnityScript">
-      <HintPath>Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/install/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -315,8 +312,10 @@
     <Compile Include="Assets\Editor\TerrainConst.cs" />
     <Compile Include="Assets\Editor\TerrainLoadEditor.cs" />
     <Compile Include="Assets\Editor\TerrainSliceEditor.cs" />
+    <Compile Include="Assets\Editor\TerrainToMeshConverter.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Resources\Shader\TerrainSimple.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

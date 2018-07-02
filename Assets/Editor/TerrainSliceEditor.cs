@@ -113,7 +113,7 @@ public class TerrainSliceEditor : Editor
                     newData.wavingGrassSpeed = grassSpeed;
                     newData.wavingGrassTint = grassTint;
                     newData.treePrototypes = treeProtos;
-                    newData.detailPrototypes = detailProtos;
+                    //newData.detailPrototypes = detailProtos;
                 }
             }
 

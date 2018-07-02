@@ -310,6 +310,7 @@
     <Compile Include="Assets\Scipts\TerrainPart.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Resources\Shader\TerrainSimple.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
