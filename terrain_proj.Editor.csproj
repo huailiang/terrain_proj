@@ -194,6 +194,9 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>D:/install/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/install/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -300,10 +303,6 @@
       <Name>terrain_proj.Plugins</Name>
     </ProjectReference>
     <ProjectReference Include="terrain_proj.csproj">
-      <Project>{5D23D143-9A24-95F2-35ED-43A849E52360}</Project>
-      <Name>terrain_proj</Name>
-    </ProjectReference>
-    <ProjectReference Include="terrain_proj.unityproj">
       <Project>{5D23D143-9A24-95F2-35ED-43A849E52360}</Project>
       <Name>terrain_proj</Name>
     </ProjectReference>
