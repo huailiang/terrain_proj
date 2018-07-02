@@ -40,6 +40,9 @@ public class TerrainSliceEditor : Editor
 
         int terrainsWide = trnconst.SLICE;
         int terrainsLong = trnconst.SLICE;
+
+        int newDetailResolution = terrainData.detailResolution / trnconst.SLICE;
+        int resolutionPerPatch = 8;
         //设置高度
         int xBase = terrainData.heightmapWidth / terrainsWide;
         int yBase = terrainData.heightmapHeight / terrainsLong;
@@ -92,8 +95,11 @@ public class TerrainSliceEditor : Editor
                     float[,] height = terrainData.GetHeights(xBase * x, yBase * y, xBase + 1, yBase + 1);
                     newData.SetHeights(0, 0, height);
 
+                    newData.SetDetailResolution(newDetailResolution, resolutionPerPatch);
+
                     int[] layers = terrainData.GetSupportedLayers(x * newData.detailWidth - 1, y * newData.detailHeight - 1, newData.detailWidth, newData.detailHeight);
                     int layerLength = layers.Length;
+
                     DetailPrototype[] tempDetailProtos = new DetailPrototype[layerLength];
                     for (int i = 0; i < layerLength; i++)
                         tempDetailProtos[i] = detailProtos[layers[i]];
@@ -107,6 +113,7 @@ public class TerrainSliceEditor : Editor
                     newData.wavingGrassSpeed = grassSpeed;
                     newData.wavingGrassTint = grassTint;
                     newData.treePrototypes = treeProtos;
+                    newData.detailPrototypes = detailProtos;
                 }
             }
 
