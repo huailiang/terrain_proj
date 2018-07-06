@@ -36,7 +36,8 @@ public class TerrainLoadEditor : Editor
                 TerrainLoadMgr.sington.LoadCollider(xx, yy);
             }
         }
-        if (root_part != null) root_part.SetActive(false);
+        Debug.Log(root_part);
+        //if (root_part != null) root_part.SetActive(false);
         TerrainLoadMgr.sington.ResetRootPos();
     }
 

@@ -134,17 +134,18 @@ public class TerrainLoadMgr
         var collider = go.AddComponent<TerrainCollider>();
         collider.terrainData = terrain.terrainData;
 
-        //terrain.treeDistance = info.treeDistance;
-        //terrain.treeBillboardDistance = info.treeBillboardDistance;
-        //terrain.treeCrossFadeLength = info.treeCrossFadeLength;
-        //terrain.treeMaximumFullLODCount = info.treeMaximumFullLODCount;
-        //terrain.detailObjectDistance = info.detailObjectDistance;
-        //terrain.detailObjectDensity = info.detailObjectDensity;
-        //terrain.heightmapPixelError = info.heightmapPixelError;
-        //terrain.heightmapMaximumLOD = info.heightmapMaximumLOD;
-        //terrain.basemapDistance = info.basemapDistance;
-        //terrain.lightmapIndex = info.lightmapIndex;
-        //terrain.castShadows = info.castShadows;
+        terrain.reflectionProbeUsage = UnityEngine.Rendering.ReflectionProbeUsage.Off;
+        terrain.treeDistance = terrain_info.treeDistance;
+        terrain.treeBillboardDistance = terrain_info.treeBillboardDistance;
+        terrain.treeCrossFadeLength = terrain_info.treeCrossFadeLength;
+        terrain.treeMaximumFullLODCount = terrain_info.treeMaximumFullLODCount;
+        terrain.detailObjectDistance = terrain_info.detailObjectDistance;
+        terrain.detailObjectDensity = terrain_info.detailObjectDensity;
+        terrain.heightmapPixelError = terrain_info.heightmapPixelError;
+        terrain.heightmapMaximumLOD = terrain_info.heightmapMaximumLOD;
+        terrain.basemapDistance = terrain_info.basemapDistance;
+        terrain.lightmapIndex = terrain_info.lightmapIndex;
+        terrain.castShadows = terrain_info.castShadows;
 
         int key = (yy << 4) + xx;
         if (!map.ContainsKey(key))
@@ -215,8 +216,11 @@ public class TerrainLoadMgr
     {
         if (map.ContainsKey(indx))
         {
-            Terrain.Destroy(map[indx], 0.4f);
-            GameObject.Destroy(map[indx].gameObject, 0.4f);
+            if (map[indx] != null)
+            {
+                Terrain.Destroy(map[indx], 0.4f);
+                GameObject.Destroy(map[indx].gameObject, 0.4f);
+            }
             map.Remove(indx);
             return true;
         }

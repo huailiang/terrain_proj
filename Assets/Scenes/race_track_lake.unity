@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 428566102}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.4490937, g: 0.4991656, b: 0.5757145, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -51,13 +51,13 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 0
+    m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 2
-    m_TextureWidth: 1024
+    m_TextureWidth: 512
     m_TextureHeight: 1024
     m_AO: 1
     m_AOMaxDistance: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 78105faa5fb8677449486b660a1b5b54,
+    type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
@@ -167,6 +168,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -246,6 +251,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -316,6 +325,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -377,6 +390,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -456,6 +473,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -534,6 +555,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -599,6 +624,10 @@ Prefab:
     - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
       propertyPath: m_Name
       value: road-signs (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
@@ -690,6 +719,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -767,6 +800,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -846,6 +883,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -884,7 +925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &192738147
 Transform:
   m_ObjectHideFlags: 0
@@ -989,6 +1030,10 @@ Prefab:
       propertyPath: m_Name
       value: rocks-mountain-1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c573322a16271b742bc446c82a9bded7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c573322a16271b742bc446c82a9bded7, type: 3}
   m_IsPrefabParent: 0
@@ -1046,6 +1091,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -1121,6 +1170,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -1178,6 +1231,10 @@ Prefab:
     - target: {fileID: 400000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
@@ -1240,6 +1297,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -1319,6 +1380,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -1397,6 +1462,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -1474,6 +1543,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -1590,6 +1663,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -1668,6 +1745,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -1742,6 +1823,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c573322a16271b742bc446c82a9bded7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c573322a16271b742bc446c82a9bded7, type: 3}
   m_IsPrefabParent: 0
@@ -1799,6 +1884,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -1866,6 +1955,10 @@ Prefab:
       propertyPath: m_Name
       value: road-signs (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -1927,6 +2020,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -2006,6 +2103,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -2083,6 +2184,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -2162,6 +2267,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -2239,6 +2348,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -2318,6 +2431,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -2395,6 +2512,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (108)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -2474,6 +2595,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -2551,6 +2676,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -2630,6 +2759,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -2668,7 +2801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &428566102
 Light:
   m_ObjectHideFlags: 0
@@ -2678,7 +2811,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9705882, g: 0.88681835, b: 0.7065311, a: 1}
+  m_Color: {r: 1, g: 0.9673428, b: 0.89705884, a: 1}
   m_Intensity: 1.6
   m_Range: 10
   m_SpotAngle: 30
@@ -2698,7 +2831,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
@@ -2773,6 +2906,10 @@ Prefab:
       propertyPath: m_Name
       value: rocks-mountain-2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
   m_IsPrefabParent: 0
@@ -2830,6 +2967,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -2909,6 +3050,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -2987,6 +3132,10 @@ Prefab:
       propertyPath: m_Name
       value: rocks-mountain-2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
   m_IsPrefabParent: 0
@@ -3044,6 +3193,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (100)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -3123,6 +3276,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -3197,6 +3354,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -3258,6 +3419,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -3337,6 +3502,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -3414,6 +3583,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -3658,6 +3831,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -3735,6 +3912,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -3830,6 +4011,38 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -1.63372505
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
   m_IsPrefabParent: 0
@@ -3837,6 +4050,71 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400014, guid: 853554035d67ed8458014b199fd7d9d9, type: 3}
   m_PrefabInternal: {fileID: 653944308}
+--- !u!1 &655224283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 655224285}
+  - component: {fileID: 655224284}
+  m_Layer: 0
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &655224284
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655224283}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.9618661, b: 0.6544118, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967240
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &655224285
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655224283}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 9.600288, y: -8.162344, z: 33.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &655547413
 Prefab:
   m_ObjectHideFlags: 0
@@ -3891,6 +4169,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -3969,6 +4251,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -4056,6 +4342,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -4134,6 +4424,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -4211,6 +4505,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -4294,6 +4592,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -4371,6 +4673,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -4450,6 +4756,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -4524,6 +4834,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
   m_IsPrefabParent: 0
@@ -4581,6 +4895,10 @@ Prefab:
     - target: {fileID: 100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
       propertyPath: m_Name
       value: rocks-mountain-2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
@@ -4643,6 +4961,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -4722,6 +5044,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -4799,6 +5125,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -4878,6 +5208,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -4956,6 +5290,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -5026,6 +5364,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.16863388
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -5079,6 +5421,10 @@ Prefab:
     - target: {fileID: 400000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
@@ -5141,6 +5487,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -5290,6 +5640,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -5368,6 +5722,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (109)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -5442,6 +5800,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.16863391
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -5491,6 +5853,10 @@ Prefab:
     - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
       propertyPath: m_Name
       value: road-signs (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
@@ -5553,6 +5919,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -5632,6 +6002,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -5710,6 +6084,10 @@ Prefab:
       propertyPath: m_Name
       value: rocks-mountain-2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
   m_IsPrefabParent: 0
@@ -5771,6 +6149,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (99)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -5850,6 +6232,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -5928,6 +6314,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -6005,6 +6395,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -6142,6 +6536,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -6216,6 +6614,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -6277,6 +6679,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -6356,6 +6762,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -6434,6 +6844,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -6511,6 +6925,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -6594,6 +7012,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -6672,6 +7094,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -6695,21 +7121,6 @@ BoxCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_PrefabInternal: {fileID: 1229543494}
---- !u!1 &1232534406 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
-  m_PrefabInternal: {fileID: 1392562413}
---- !u!114 &1232534413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232534406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c83b49ab09e24a4ba596d2aa692b155, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1241994902
 Prefab:
   m_ObjectHideFlags: 0
@@ -6764,6 +7175,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -6839,6 +7254,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.16863415
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -6896,6 +7315,10 @@ Prefab:
     - target: {fileID: 400000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
@@ -7021,6 +7444,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -7091,6 +7518,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.168634
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -7155,35 +7586,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444856, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9579096, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
-      propertyPath: m_MovingTurnSpeed
-      value: 1800
-      objectReference: {fileID: 0}
-    - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
-      propertyPath: m_StationaryTurnSpeed
-      value: 900
-      objectReference: {fileID: 0}
-    - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
-      propertyPath: m_JumpPower
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 20216210924310482, guid: 7737647c22c1fc64a88d5cd030c352ce,
+    - target: {fileID: 114944688939599924, guid: 7737647c22c1fc64a88d5cd030c352ce,
         type: 2}
-      propertyPath: far clip plane
-      value: 300
-      objectReference: {fileID: 0}
+      propertyPath: lightmapTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: a349c0486b525cd428a2437934dd0ec9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
   m_IsPrefabParent: 0
@@ -7241,6 +7648,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -7320,6 +7731,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -7397,6 +7812,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -7476,6 +7895,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -7553,6 +7976,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -7632,6 +8059,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -7710,6 +8141,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -7771,6 +8206,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -7921,6 +8360,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -8016,6 +8459,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -8113,6 +8560,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -8190,6 +8641,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -8269,6 +8724,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -8346,6 +8805,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -8425,6 +8888,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -8502,6 +8969,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -8581,6 +9052,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -8658,6 +9133,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -8737,6 +9216,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -8814,6 +9297,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -8893,6 +9380,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -8970,6 +9461,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -9049,6 +9544,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -9127,6 +9626,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -9197,6 +9700,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.168634
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -9258,6 +9765,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -9337,6 +9848,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -9414,6 +9929,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -9493,6 +10012,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -9570,6 +10093,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -9649,6 +10176,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -9719,6 +10250,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.168634
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
   m_IsPrefabParent: 0
@@ -9780,6 +10315,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -9859,6 +10398,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -9936,6 +10479,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -10015,6 +10562,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -10092,6 +10643,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -10171,6 +10726,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -10248,6 +10807,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -10327,6 +10890,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -10404,6 +10971,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -10483,6 +11054,10 @@ Prefab:
       propertyPath: m_Name
       value: rocks-mountain-2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
   m_IsPrefabParent: 0
@@ -10545,6 +11120,10 @@ Prefab:
       propertyPath: m_Name
       value: rocks-mountain-2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11786ea4822f6214397607504b10357d, type: 3}
   m_IsPrefabParent: 0
@@ -10594,6 +11173,10 @@ Prefab:
     - target: {fileID: 400000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.168634
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87403507033f0034eab7ba172e32535d, type: 3}
@@ -10652,6 +11235,10 @@ Prefab:
     - target: {fileID: 400000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_LocalScale.z
       value: 50.00009
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -10731,6 +11318,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -10808,6 +11399,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
@@ -10887,6 +11482,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -10965,6 +11564,10 @@ Prefab:
       propertyPath: m_Name
       value: tire (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_IsPrefabParent: 0
@@ -11042,6 +11645,10 @@ Prefab:
     - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
       propertyPath: m_Name
       value: tire (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92bea14e5c4591408be760558da7b90, type: 3}

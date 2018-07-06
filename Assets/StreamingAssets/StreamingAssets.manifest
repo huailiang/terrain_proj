@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 3014074076
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: lake_lightmap.ab
+      Dependencies: {}
