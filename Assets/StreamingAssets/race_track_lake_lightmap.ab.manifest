@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2089020627
+CRC: 974261159
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a4e57958ca96a47da1b924fee633f67a
+    Hash: 519409f005f2ffea95454d136970e8bd
   TypeTreeHash:
     serializedVersion: 2
     Hash: f97869c28a1aa28c8d991fd457505a12
@@ -14,7 +14,8 @@ ClassTypes:
 - Class: 49
   Script: {instanceID: 0}
 Assets:
+- Assets/race_track_lake.bytes
 - Assets/Scenes/race_track_lake/Lightmap-0_comp_light.exr
-- Assets/lake.bytes
+- Assets/Scenes/race_track_lake/Lightmap-2_comp_light.exr
 - Assets/Scenes/race_track_lake/Lightmap-1_comp_light.exr
 Dependencies: []

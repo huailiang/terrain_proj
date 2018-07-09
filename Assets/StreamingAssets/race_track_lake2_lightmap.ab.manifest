@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 2781690729
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 47ed94be87387575cd879ceab004cd6d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f97869c28a1aa28c8d991fd457505a12
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/race_track_lake2/Lightmap-0_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-1_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-5_comp_light.exr
+- Assets/race_track_lake2.bytes
+- Assets/Scenes/race_track_lake2/Lightmap-13_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-9_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-12_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-3_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-8_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-6_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-11_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-15_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-14_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-16_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-2_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-10_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-18_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-7_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-17_comp_light.exr
+- Assets/Scenes/race_track_lake2/Lightmap-4_comp_light.exr
+Dependencies: []

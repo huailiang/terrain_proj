@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.IO;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
 
+    private XLightmapData lmData;
 
     private void Awake()
     {
@@ -13,17 +14,27 @@ public class GameController : MonoBehaviour
         //GameObject go2 = GameObject.Find("collider_root");
         //TerrainLoadMgr.sington.SetRoot(go1.transform, go2.transform, "LakeTerrain");
         //TerrainLoadMgr.sington.EnableBox(true);
+
+        lmData = GameObject.FindObjectOfType<XLightmapData>();
     }
 
 
-    private IEnumerator Start()
+    private void OnGUI()
     {
-        Debug.Log(LightmapSettings.lightmaps);
-        string path = Path.Combine(Application.streamingAssetsPath, "lake_lightmap.ab");
+        if(GUI.Button(new Rect(10,10,100,70),"LoadLightMap"))
+        {
+            StartCoroutine(LoadLM());
+        }
+    }
+
+    private IEnumerator LoadLM()
+    {
+        string scene = SceneManager.GetActiveScene().name;
+        string path = Path.Combine(Application.streamingAssetsPath, scene + "_lightmap.ab");
         WWW www = new WWW(path);
         yield return www;
         AssetBundle curBundleObj = www.assetBundle;
-        TextAsset text = curBundleObj.LoadAsset<TextAsset>("lake");
+        TextAsset text = curBundleObj.LoadAsset<TextAsset>(scene);
         MemoryStream ms = new MemoryStream(text.bytes);
         ms.Position = 0;
         BinaryReader reader = new BinaryReader(ms);
@@ -45,12 +56,14 @@ public class GameController : MonoBehaviour
                 data.lightmapDir = curBundleObj.LoadAsset<Texture2D>(lmdirs[i]);
             }
             datas[i] = data;
+            lmData.SetUp();
         }
         LightmapSettings.lightmaps = datas;
         reader.Close();
         ms.Close();
+        www.Dispose();
     }
-
+    
 
     private void Update()
     {

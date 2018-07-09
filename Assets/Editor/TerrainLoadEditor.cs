@@ -15,6 +15,11 @@ public class TerrainLoadEditor : Editor
             offset = terr.transform.position;
             terr.gameObject.SetActive(false);
         }
+        else
+        {
+            Debug.LogError("not found terrain");
+            return;
+        }
 
         string str_root_terrain = "terrain_root";
         string str_root_collider = "collider_root";
@@ -23,8 +28,8 @@ public class TerrainLoadEditor : Editor
         GameObject root_terrain = GameObject.Find(str_root_terrain);
         GameObject root_collider = GameObject.Find(str_root_collider);
         GameObject root_part = GameObject.Find(str_root_parts);
-        if (root_terrain == null) root_terrain = new GameObject(str_root_terrain);
-        if (root_collider == null) root_collider = new GameObject(str_root_collider);
+        if (root_terrain == null) root_terrain = AttachGameobject(str_root_terrain);
+        if (root_collider == null) root_collider = AttachGameobject(str_root_collider);
 
         TerrainLoadMgr.sington.SetRoot(root_terrain.transform, root_collider.transform, terr.name);
 
@@ -41,4 +46,16 @@ public class TerrainLoadEditor : Editor
         TerrainLoadMgr.sington.ResetRootPos();
     }
 
+
+
+    private static GameObject AttachGameobject(string name)
+    {
+        GameObject go = new GameObject(name);
+        var root = GameObject.Find("raceTrackLakeLevel");
+        go.transform.SetParent(root.transform);
+        go.transform.localPosition = Vector3.zero;
+        go.transform.localScale = Vector3.one;
+        go.transform.localRotation = Quaternion.identity;
+        return go;
+    }
 }
