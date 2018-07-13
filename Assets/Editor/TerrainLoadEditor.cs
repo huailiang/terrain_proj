@@ -37,12 +37,12 @@ public class TerrainLoadEditor : Editor
         {
             for (int yy = 0; yy < YMax; ++yy)
             {
-                TerrainLoadMgr.sington.LoadItem(xx, yy);
+                //TerrainLoadMgr.sington.LoadItem(xx, yy);
                 TerrainLoadMgr.sington.LoadCollider(xx, yy);
             }
         }
         Debug.Log(root_part);
-        //if (root_part != null) root_part.SetActive(false);
+        if (root_part != null) root_part.SetActive(false);
         TerrainLoadMgr.sington.ResetRootPos();
     }
 
