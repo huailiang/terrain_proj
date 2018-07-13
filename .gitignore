@@ -17,3 +17,6 @@
 *.DotSettings
 *.apk
 *.DS_Store
+*.csproj
+*.sln
+*.suo
