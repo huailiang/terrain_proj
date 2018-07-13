@@ -27,3 +27,31 @@ Unity 大地形研究
 3. 部件的加载
 	
 	部件如场景里的石头这个物件，他的加载跟着地形分片一同加载、卸载。而不是以 player 为中心做四叉树来管理场景的加载卸载。
+
+
+4. 地形lightmap生成lightmap
+
+	点击 Terrain->生成lightmap资源，即可以把当前场景的lightmap 贴图全部达成assetbundle. 在打包lightmap贴图的同时，会生成一个二进制文件被打到同一个assetbundle中，这个二进制文件记录了当前场景里所有render的lightmap的index索引和offsetscale偏移。
+
+
+``` csharp
+writer.Write(terrains[i].lightmapIndex);
+writer.Write(terrains[i].lightmapScaleOffset.x);
+writer.Write(terrains[i].lightmapScaleOffset.y);
+writer.Write(terrains[i].lightmapScaleOffset.z);
+writer.Write(terrains[i].lightmapScaleOffset.w);
+```
+
+工程里有三个scene：
+
+race_track_lake：
+
+第一个工程是用来测试地形的切割和加载
+
+race_track_lake2：
+
+测试lightmap的动态加载(ab)和偏移 不考虑地形切割
+
+race_track_lake3：
+
+地形切割且使用lightmap的动态加载
