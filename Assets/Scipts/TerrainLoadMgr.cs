@@ -1,6 +1,9 @@
 ﻿using System.IO;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using System;
 
 public class TerrainLoadMgr
 {
@@ -18,11 +21,29 @@ public class TerrainLoadMgr
 
     private string terrain_name;
 
-    private TerrainInfo terrain_info;
+    private XTerrainInfo terrain_info;
+
+    private DyncRenderInfo[] render_lm_info;
+
+    private TerrainInfo[] terrain_lm_info;
 
     private Dictionary<int, Terrain> map;
 
     private TerrainNode[] bxs;
+
+    XLightmapData _lightmap_data;
+
+    XLightmapData lightmap_data
+    {
+        get
+        {
+            if (_lightmap_data == null)
+            {
+                _lightmap_data = GameObject.FindObjectOfType<XLightmapData>();
+            }
+            return _lightmap_data;
+        }
+    }
 
     public Transform PartRoot
     {
@@ -38,19 +59,13 @@ public class TerrainLoadMgr
 
         string path = "Assets/Resources/" + name + "/" + name;
         terrain_info = LoadTerrainInfo(path + ".bytes");
-
+        
         if (map == null)
         {
             map = new Dictionary<int, Terrain>();
         }
         else
         {
-            foreach (var item in map)
-            {
-                int y = item.Key >> 4;
-                int x = item.Key & 0xf;
-                UnloadItem(x, y);
-            }
             map.Clear();
         }
         bxs = collider_root.GetComponentsInChildren<TerrainNode>();
@@ -70,12 +85,12 @@ public class TerrainLoadMgr
         }
     }
 
-    public TerrainInfo LoadTerrainInfo(string path)
+    public XTerrainInfo LoadTerrainInfo(string path)
     {
         FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
         BinaryReader reader = new BinaryReader(fs);
 
-        TerrainInfo info = new TerrainInfo();
+        XTerrainInfo info = new XTerrainInfo();
         float x = reader.ReadSingle();
         float y = reader.ReadSingle();
         float z = reader.ReadSingle();
@@ -102,6 +117,7 @@ public class TerrainLoadMgr
     {
         int cnt = reader.ReadInt32();
         parts = new TerrainPart[cnt];
+        Debug.Log(cnt);
         for (int i = 0; i < cnt; i++)
         {
             parts[i] = new TerrainPart();
@@ -118,6 +134,12 @@ public class TerrainLoadMgr
             y = reader.ReadSingle();
             z = reader.ReadSingle();
             parts[i].scale = new Vector3(x, y, z);
+            parts[i].lightmapIndex = reader.ReadInt32();
+            x = reader.ReadSingle();
+            y = reader.ReadSingle();
+            z = reader.ReadSingle();
+            float w = reader.ReadSingle();
+            parts[i].lightmapOffsetScale = new Vector4(x, y, z, w);
             parts[i].path = reader.ReadString();
         }
     }
@@ -144,9 +166,19 @@ public class TerrainLoadMgr
         terrain.heightmapPixelError = terrain_info.heightmapPixelError;
         terrain.heightmapMaximumLOD = terrain_info.heightmapMaximumLOD;
         terrain.basemapDistance = terrain_info.basemapDistance;
-        terrain.lightmapIndex = terrain_info.lightmapIndex;
         terrain.castShadows = terrain_info.castShadows;
 
+        if (terrain_lm_info != null)
+        {
+            int index = 4 * xx + yy;
+            terrain.lightmapIndex = terrain_lm_info[index].lightmapIndex;
+            terrain.lightmapScaleOffset = terrain_lm_info[index].lightmapOffsetScale;
+        }
+        else
+        {
+            terrain.lightmapIndex = terrain_info.lightmapIndex;
+        }
+        
         int key = (yy << 4) + xx;
         if (!map.ContainsKey(key))
         {
@@ -242,6 +274,7 @@ public class TerrainLoadMgr
         }
     }
 
+   
     private void UnloadPart(int xx, int yy)
     {
         Bounds bounds = new Bounds();
@@ -255,6 +288,81 @@ public class TerrainLoadMgr
             {
                 parts[i].Unload();
             }
+        }
+    }
+
+    public IEnumerator LoadLM(Action finish)
+    {
+        string scene = SceneManager.GetActiveScene().name;
+        string path = Path.Combine(Application.streamingAssetsPath, scene + "_lightmap.ab");
+        WWW www = new WWW(path);
+        yield return www;
+        AssetBundle curBundleObj = www.assetBundle;
+        TextAsset text = curBundleObj.LoadAsset<TextAsset>(scene);
+        MemoryStream ms = new MemoryStream(text.bytes);
+        ms.Position = 0;
+        BinaryReader reader = new BinaryReader(ms);
+        int cnt = reader.ReadInt32();
+        string[] lmcolors = new string[cnt];
+        string[] lmdirs = new string[cnt];
+        LightmapData[] datas = new LightmapData[cnt];
+        for (int i = 0; i < cnt; i++)
+        {
+            lmcolors[i] = reader.ReadString();
+            lmdirs[i] = reader.ReadString();
+            LightmapData data = new LightmapData();
+            if (!string.IsNullOrEmpty(lmcolors[i]))
+            {
+                data.lightmapColor = curBundleObj.LoadAsset<Texture2D>(lmcolors[i]);
+            }
+            if (!string.IsNullOrEmpty(lmdirs[i]))
+            {
+                data.lightmapDir = curBundleObj.LoadAsset<Texture2D>(lmdirs[i]);
+            }
+            datas[i] = data;
+            lightmap_data.SetUp();
+        }
+        LightmapSettings.lightmaps = datas;
+        LoadLightmapOffsetInfo(reader);
+
+        reader.Close();
+        ms.Close();
+        www.Dispose();
+        if (finish != null) finish();
+    }
+
+    private void LoadLightmapOffsetInfo(BinaryReader reader)
+    {
+        int cnt = reader.ReadInt32();
+        render_lm_info = new DyncRenderInfo[cnt];
+        for (int i = 0; i < cnt; i++)
+        {
+            DyncRenderInfo info = new DyncRenderInfo();
+            info.lightIndex = reader.ReadInt32();
+            float x = reader.ReadSingle();
+            float y = reader.ReadSingle();
+            float z = reader.ReadSingle();
+            float w = reader.ReadSingle();
+            info.lightOffsetScale = new Vector4(w, y, z, w);
+            info.hash = reader.ReadInt32();
+            x = reader.ReadSingle();
+            y = reader.ReadSingle();
+            z = reader.ReadSingle();
+            info.pos = new Vector3(x, y, z);
+            render_lm_info[i] = info;
+        }
+        cnt = reader.ReadInt32();
+        terrain_lm_info = new TerrainInfo[cnt];
+        for (int i = 0; i < cnt; i++)
+        {
+            TerrainInfo info = new TerrainInfo();
+            info.lightmapIndex = reader.ReadInt32();
+            float x = reader.ReadSingle();
+            float y = reader.ReadSingle();
+            float z = reader.ReadSingle();
+            float w = reader.ReadSingle();
+            info.lightmapOffsetScale = new Vector4(x, y, z, w);
+            terrain_lm_info[i] = info;
         }
     }
 

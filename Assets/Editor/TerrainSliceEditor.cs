@@ -160,7 +160,6 @@ public class TerrainSliceEditor : Editor
     private static void WriteTerrainInfo(Terrain terrain, string path)
     {
         FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write);
-
         BinaryWriter writer = new BinaryWriter(fs);
 
         //这里我分割的宽和长度是一样的.这里求出循环次数,TerrainLoad.SIZE要生成的地形宽度,长度相同
@@ -205,6 +204,23 @@ public class TerrainSliceEditor : Editor
             writer.Write(tf.localScale.x);
             writer.Write(tf.localScale.y);
             writer.Write(tf.localScale.z);
+            MeshRenderer render = tf.gameObject.GetComponent<MeshRenderer>();
+            if (render == null)
+            {
+                writer.Write(-1);
+                writer.Write(1.0f);
+                writer.Write(1.0f);
+                writer.Write(0f);
+                writer.Write(0f);
+            }
+            else
+            {
+                writer.Write(render.lightmapIndex);
+                writer.Write(render.lightmapScaleOffset.x);
+                writer.Write(render.lightmapScaleOffset.y);
+                writer.Write(render.lightmapScaleOffset.z);
+                writer.Write(render.lightmapScaleOffset.w);
+            }
             Object oobj = PrefabUtility.GetPrefabParent(tf.gameObject);
             string path = AssetDatabase.GetAssetPath(oobj);
             path = path.Replace("Assets/Resources/", "");

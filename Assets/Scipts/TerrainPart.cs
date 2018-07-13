@@ -15,6 +15,10 @@ public class TerrainPart
 
     public string path;
 
+    public int lightmapIndex;
+
+    public Vector4 lightmapOffsetScale;
+
     public Transform root;
 
     private GameObject go;
@@ -25,7 +29,7 @@ public class TerrainPart
     {
         AsynLoadMgr.sington.Load(path, LoadFinish);
     }
-    
+
     private void LoadFinish(Object obj)
     {
         go = GameObject.Instantiate(obj) as GameObject;
@@ -33,6 +37,13 @@ public class TerrainPart
         go.transform.position = pos;
         go.transform.localScale = scale;
         go.transform.rotation = rot;
+
+        MeshRenderer rend = go.GetComponent<MeshRenderer>();
+        if (rend != null && lightmapIndex != -1)
+        {
+            rend.lightmapIndex = lightmapIndex;
+            rend.lightmapScaleOffset = lightmapOffsetScale;
+        }
     }
 
     public void Unload()

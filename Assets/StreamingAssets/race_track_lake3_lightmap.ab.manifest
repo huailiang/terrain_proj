@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 285062567
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7b1171c371709bd8e6f75bb0fda0adbd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f97869c28a1aa28c8d991fd457505a12
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/race_track_lake3/Lightmap-0_comp_light.exr
+- Assets/Scenes/race_track_lake3/Lightmap-1_comp_light.exr
+- Assets/race_track_lake3.bytes
+- Assets/Scenes/race_track_lake3/Lightmap-2_comp_light.exr
+Dependencies: []

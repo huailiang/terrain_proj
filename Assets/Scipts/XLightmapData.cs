@@ -2,13 +2,27 @@
 using UnityEngine;
 
 
-//LightMap信息
 [System.Serializable]
 public struct RendererInfo
 {
     public Renderer renderer;
     public int lightmapIndex;
     public Vector4 lightmapOffsetScale;
+}
+
+[System.Serializable]
+public struct TerrainInfo
+{
+    public Vector4 lightmapOffsetScale;
+    public int lightmapIndex;
+}
+
+public struct DyncRenderInfo
+{
+    public int lightIndex;
+    public Vector4 lightOffsetScale;
+    public int hash;
+    public Vector3 pos;
 }
 
 //场景中的Fog信息
@@ -31,7 +45,7 @@ public class XLightmapData : MonoBehaviour
 
     //地形的LightMap信息
     public Terrain[] terrains;
-    public RendererInfo[] terrainsRendererInfo;
+    public TerrainInfo[] terrainsRendererInfo;
 
     //设置光照信息
     [ContextMenu("Setup")]
@@ -46,7 +60,6 @@ public class XLightmapData : MonoBehaviour
         RenderSettings.fogEndDistance = fogInfo.fogEndDistance;
         RenderSettings.fogDensity = fogInfo.fogDensity;
     }
-
 
     //保存光照信息
     [ContextMenu("Save")]
@@ -77,10 +90,10 @@ public class XLightmapData : MonoBehaviour
         if (terrains != null)
         {
             int cnt = terrains.Length;
-            terrainsRendererInfo = new RendererInfo[cnt];
+            terrainsRendererInfo = new TerrainInfo[cnt];
             for (int i = 0; i < cnt; i++)
             {
-                var terrainRenderer = new RendererInfo();
+                var terrainRenderer = new TerrainInfo();
                 terrainRenderer.lightmapOffsetScale = terrains[i].lightmapScaleOffset;
                 terrainRenderer.lightmapIndex = terrains[i].lightmapIndex;
                 terrainsRendererInfo[i] = terrainRenderer;
@@ -93,8 +106,11 @@ public class XLightmapData : MonoBehaviour
     {
         for (int i = 0; i < terrainsRendererInfo.Length; i++)
         {
-            terrains[i].lightmapScaleOffset = terrainsRendererInfo[i].lightmapOffsetScale;
-            terrains[i].lightmapIndex = terrainsRendererInfo[i].lightmapIndex;
+            if (terrains[i] != null)
+            {
+                terrains[i].lightmapScaleOffset = terrainsRendererInfo[i].lightmapOffsetScale;
+                terrains[i].lightmapIndex = terrainsRendererInfo[i].lightmapIndex;
+            }
         }
         if (m_RendererInfo.Count > 0)
         {

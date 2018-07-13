@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public struct TerrainInfo
+public struct XTerrainInfo
 {
     public Vector3 pos;
     public int sliceSize;

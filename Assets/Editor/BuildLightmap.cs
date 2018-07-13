@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class BuildLightmap
 {
 
-    [MenuItem("Build/测试Lightmapping信息 ")]
+    [MenuItem("Terrain/测试Lightmapping信息 ")]
     static void TestLightmapingInfo()
     {
         GameObject[] tempObject;
@@ -23,17 +23,23 @@ public class BuildLightmap
                     Debug.Log("Lightmaping Index:" + render.lightmapIndex);
                     Debug.Log("LightmapingOffset: " + render.lightmapScaleOffset);
                 }
+                Terrain terrain = tempObject[i].GetComponent<Terrain>();
+                if (terrain != null)
+                {
+                    Debug.Log("lightmaping index:" + terrain.lightmapIndex);
+                    Debug.Log("lightmaping offset: " + terrain.lightmapScaleOffset);
+                }
             }
         }
     }
 
-    [MenuItem("Build/生成LightmapData资源")]
+    [MenuItem("Terrain/生成LightmapData资源")]
     static void TestLightmapData()
     {
         try
         {
             string scene = SceneManager.GetActiveScene().name;
-            string asset_path = "Assets/" + scene+".bytes";
+            string asset_path = "Assets/" + scene + ".bytes";
             string record = Path.Combine(Application.dataPath, scene + ".bytes");
             List<string> assetNames = new List<string>();
             assetNames.Add(asset_path);
@@ -54,7 +60,7 @@ public class BuildLightmap
                 if (lmColors[i] != null) assetNames.Add(AssetDatabase.GetAssetPath(lmColors[i]));
                 if (lmDirs[i] != null) assetNames.Add(AssetDatabase.GetAssetPath(lmDirs[i]));
             }
-
+            RecordLightmapOffset(writer);
             writer.Flush();
             writer.Close();
             fs.Close();
@@ -91,5 +97,66 @@ public class BuildLightmap
             AssetDatabase.Refresh();
         }
     }
-    
+
+    private static void RecordLightmapOffset(BinaryWriter writer)
+    {
+        GameObject go = GameObject.Find("raceTrackLakeLevel");
+        if (go != null)
+        {
+            var renderers = go.GetComponentsInChildren<MeshRenderer>();
+            List<DyncRenderInfo> list = new List<DyncRenderInfo>();
+            foreach (MeshRenderer r in renderers)
+            {
+                if (r.lightmapIndex != -1)
+                {
+                    DyncRenderInfo info = new DyncRenderInfo();
+                    info.lightIndex = r.lightmapIndex;
+                    info.lightOffsetScale = r.lightmapScaleOffset;
+                    Object parentObject = PrefabUtility.GetPrefabParent(r.gameObject);
+                    info.hash = AssetDatabase.GetAssetPath(parentObject).GetHashCode();
+                    info.pos = r.transform.position;
+                    list.Add(info);
+                    Debug.Log("path: " + info.hash);
+                }
+            }
+            writer.Write(list.Count);
+            for (int i = 0; i < list.Count; i++)
+            {
+                DyncRenderInfo info = list[i];
+                writer.Write(info.lightIndex);
+                writer.Write(info.lightOffsetScale.x);
+                writer.Write(info.lightOffsetScale.y);
+                writer.Write(info.lightOffsetScale.z);
+                writer.Write(info.lightOffsetScale.w);
+                writer.Write(info.hash);
+                writer.Write(info.pos.x);
+                writer.Write(info.pos.y);
+                writer.Write(info.pos.z);
+            }
+
+            var terrains = go.GetComponentsInChildren<Terrain>();
+            if (terrains != null)
+            {
+                int cnt = terrains.Length;
+                writer.Write(cnt);
+                for (int i = 0; i < cnt; i++)
+                {
+                    writer.Write(terrains[i].lightmapIndex);
+                    writer.Write(terrains[i].lightmapScaleOffset.x);
+                    writer.Write(terrains[i].lightmapScaleOffset.y);
+                    writer.Write(terrains[i].lightmapScaleOffset.z);
+                    writer.Write(terrains[i].lightmapScaleOffset.w);
+                }
+            }
+            else
+            {
+                EditorUtility.DisplayDialog("error", "not found terrain gameobject", "ok");
+            }
+        }
+        else
+        {
+            EditorUtility.DisplayDialog("error", "not found scene root gameobject", "ok");
+        }
+    }
+
 }
