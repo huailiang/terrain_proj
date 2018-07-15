@@ -42,18 +42,13 @@ Unity 大地形研究
 
 工程里有三个scene：
 
-race_track_lake：
+race_track_lake：用来测试地形的切割和加载
 
-第一个工程是用来测试地形的切割和加载
+race_track_lake2：测试lightmap的动态加载(ab)和偏移 不考虑地形切割
 
-race_track_lake2：
+race_track_lake3：地形切割且使用lightmap的动态加载
 
-测试lightmap的动态加载(ab)和偏移 不考虑地形切割
-
-race_track_lake3：
-
-地形切割且使用lightmap的动态加载
-
+本文对应的博客地址：https://huailiang.github.io/2018/07/15/terrain/
 
 
 注意：
