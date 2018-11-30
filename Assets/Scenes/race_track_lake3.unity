@@ -1602,8 +1602,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &141123461
 Transform:
   m_ObjectHideFlags: 0
@@ -1903,8 +1903,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
 --- !u!4 &168215325
 Transform:
   m_ObjectHideFlags: 0
@@ -2484,8 +2484,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &224687488
 Transform:
   m_ObjectHideFlags: 0
@@ -3419,38 +3419,38 @@ MonoBehaviour:
   - {fileID: 224687490}
   - {fileID: 1317773334}
   terrainsRendererInfo:
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
-  - lightmapOffsetScale: {x: 1, y: 1, z: 0, w: 0}
-    lightmapIndex: -1
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 3
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 13
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 8
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 6
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 7
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 15
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 11
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 4
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 12
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 17
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 14
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 5
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 9
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 10
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0.17090861}
+    lightmapIndex: 2
+  - lightmapOffsetScale: {x: 0.68359375, y: 0.68359375, z: 0, w: 0}
+    lightmapIndex: 16
 --- !u!1001 &281729019
 Prefab:
   m_ObjectHideFlags: 0
@@ -5816,8 +5816,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &487309703
 Transform:
   m_ObjectHideFlags: 0
@@ -6766,8 +6766,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &570114344
 Transform:
   m_ObjectHideFlags: 0
@@ -9546,8 +9546,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &753379294
 Transform:
   m_ObjectHideFlags: 0
@@ -10033,8 +10033,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &774880980
 Transform:
   m_ObjectHideFlags: 0
@@ -12691,8 +12691,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &1038778888
 Transform:
   m_ObjectHideFlags: 0
@@ -14621,8 +14621,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &1221666984
 Transform:
   m_ObjectHideFlags: 0
@@ -15710,8 +15710,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &1317773332
 Transform:
   m_ObjectHideFlags: 0
@@ -15838,8 +15838,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &1325941559
 Transform:
   m_ObjectHideFlags: 0
@@ -17649,7 +17649,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 0
 --- !u!154 &1478365724
 TerrainCollider:
@@ -18415,8 +18415,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &1553005053
 Transform:
   m_ObjectHideFlags: 0
@@ -19709,8 +19709,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &1655201066
 Transform:
   m_ObjectHideFlags: 0
@@ -22346,8 +22346,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &1920053405
 Transform:
   m_ObjectHideFlags: 0
@@ -22759,8 +22759,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &1935726040
 Transform:
   m_ObjectHideFlags: 0
@@ -23403,8 +23403,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!4 &2003035301
 Transform:
   m_ObjectHideFlags: 0
