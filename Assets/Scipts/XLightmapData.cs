@@ -110,6 +110,7 @@ public class XLightmapData : MonoBehaviour
             {
                 terrains[i].lightmapScaleOffset = terrainsRendererInfo[i].lightmapOffsetScale;
                 terrains[i].lightmapIndex = terrainsRendererInfo[i].lightmapIndex;
+                Debug.Log("lightmap scale: " + terrainsRendererInfo[i].lightmapOffsetScale+" index: " + terrainsRendererInfo[i].lightmapIndex);
             }
         }
         if (m_RendererInfo.Count > 0)

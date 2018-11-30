@@ -89,27 +89,36 @@ public class TerrainLoadMgr
     {
         FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
         BinaryReader reader = new BinaryReader(fs);
-
         XTerrainInfo info = new XTerrainInfo();
-        float x = reader.ReadSingle();
-        float y = reader.ReadSingle();
-        float z = reader.ReadSingle();
-        info.pos = new Vector3(x, y, z);
-        info.sliceSize = reader.ReadInt32();
-        info.treeDistance = reader.ReadSingle();
-        info.treeBillboardDistance = reader.ReadSingle();
-        info.treeCrossFadeLength = reader.ReadInt32();
-        info.treeMaximumFullLODCount = reader.ReadInt32();
-        info.detailObjectDistance = reader.ReadSingle();
-        info.detailObjectDensity = reader.ReadSingle();
-        info.heightmapPixelError = reader.ReadSingle();
-        info.heightmapMaximumLOD = reader.ReadInt32();
-        info.basemapDistance = reader.ReadSingle();
-        info.lightmapIndex = reader.ReadInt32();
-        info.castShadows = reader.ReadBoolean();
-        LoadPartsInfo(reader);
-        reader.Close();
-        fs.Close();
+        try
+        {
+            float x = reader.ReadSingle();
+            float y = reader.ReadSingle();
+            float z = reader.ReadSingle();
+            info.pos = new Vector3(x, y, z);
+            info.sliceSize = reader.ReadInt32();
+            info.treeDistance = reader.ReadSingle();
+            info.treeBillboardDistance = reader.ReadSingle();
+            info.treeCrossFadeLength = reader.ReadInt32();
+            info.treeMaximumFullLODCount = reader.ReadInt32();
+            info.detailObjectDistance = reader.ReadSingle();
+            info.detailObjectDensity = reader.ReadSingle();
+            info.heightmapPixelError = reader.ReadSingle();
+            info.heightmapMaximumLOD = reader.ReadInt32();
+            info.basemapDistance = reader.ReadSingle();
+            info.lightmapIndex = reader.ReadInt32();
+            info.castShadows = reader.ReadBoolean();
+            LoadPartsInfo(reader);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError(e.Message + " \n" + e.StackTrace);
+        }
+        finally
+        {
+            reader.Close();
+            fs.Close();
+        }
         return info;
     }
 
@@ -167,6 +176,7 @@ public class TerrainLoadMgr
         terrain.heightmapMaximumLOD = terrain_info.heightmapMaximumLOD;
         terrain.basemapDistance = terrain_info.basemapDistance;
         terrain.castShadows = terrain_info.castShadows;
+        terrain.gameObject.isStatic = true; 
 
         if (terrain_lm_info != null)
         {
@@ -178,7 +188,6 @@ public class TerrainLoadMgr
         {
             terrain.lightmapIndex = terrain_info.lightmapIndex;
         }
-        
         int key = (yy << 4) + xx;
         if (!map.ContainsKey(key))
         {
@@ -320,8 +329,8 @@ public class TerrainLoadMgr
                 data.lightmapDir = curBundleObj.LoadAsset<Texture2D>(lmdirs[i]);
             }
             datas[i] = data;
-            lightmap_data.SetUp();
         }
+        lightmap_data.SetUp();
         LightmapSettings.lightmaps = datas;
         LoadLightmapOffsetInfo(reader);
 

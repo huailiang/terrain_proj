@@ -112,7 +112,7 @@ public class BuildLightmap
                     DyncRenderInfo info = new DyncRenderInfo();
                     info.lightIndex = r.lightmapIndex;
                     info.lightOffsetScale = r.lightmapScaleOffset;
-                    Object parentObject = PrefabUtility.GetPrefabParent(r.gameObject);
+                    Object parentObject = PrefabUtility.GetCorrespondingObjectFromSource(r.gameObject);
                     info.hash = AssetDatabase.GetAssetPath(parentObject).GetHashCode();
                     info.pos = r.transform.position;
                     list.Add(info);

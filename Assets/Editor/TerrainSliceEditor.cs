@@ -221,7 +221,7 @@ public class TerrainSliceEditor : Editor
                 writer.Write(render.lightmapScaleOffset.z);
                 writer.Write(render.lightmapScaleOffset.w);
             }
-            Object oobj = PrefabUtility.GetPrefabParent(tf.gameObject);
+            Object oobj = PrefabUtility.GetCorrespondingObjectFromSource(tf.gameObject);
             string path = AssetDatabase.GetAssetPath(oobj);
             path = path.Replace("Assets/Resources/", "");
             path = path.Remove(path.LastIndexOf('.'));
