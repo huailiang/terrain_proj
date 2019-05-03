@@ -37,7 +37,7 @@ race_track_lake2：测试lightmap的动态加载(ab)和偏移 不考虑地形切
 
 race_track_lake3：地形切割且使用lightmap的动态加载
 
-本文对应的博客地址：https://huailiang.github.io/2018/07/15/terrain/
+本文对应的博客地址：https://huailiang.github.io/blog/2018/terrain/
 
 
 注意：
